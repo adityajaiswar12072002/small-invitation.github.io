@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            text-align: center;
+            /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+            background-image:url("11557.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        h2{
+            font-size: 40px;
+            font-weight: bold;
+            /* color: black; */
+            color: linear-gradient(to left,
+                    violet,
+                    indigo,
+                    blue,
+                    green,
+                    yellow,
+                    orange,
+                    red);
+        }
+        #main{
+            color: black;
+            background-color: aliceblue;
+            font-size: 20px;
+            /* border: 2px solid black; */
+            border-radius: 25px;
+            /* display: inline-block; */
+            display: none;
+            width: 285px;
+            opacity: 0.7;
+            }
+            #para{
+                text-shadow: 0px 0px 2px navy;
+                font-family: cursive;
+            }
+        .dharavi{
+            background-color: grey;
+            color:black;
+            border-radius: 6px ;
+        }
+        .beti {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    height: 45px;
+    font-size: 20px;
+    width: 107px;
+}
+        input{
+            text-align: center;
+            height: 25px;
+            width: 165px;
+        }
+        #dance{
+            border-radius: 8px;
+            /* background-color: bisque; */
+            color: black;
+            text-transform: uppercase;
+
+        }
+        h3{
+            font-size: 26px;
+            font-weight: bold;
+        }
+        /* @media screen and (max-width: 600px){
+            h2{
+                font-size: 20px;
+            font-weight: bold;
+            color: black;
+            }
+        } */
+    </style>
+</head>
+<body>
+    <h3>Chetana's Self Financing Course Bsc-IT Students</h3>
+    <h2>FRESHERS</h2>
+    <div id="venki">
+    <!-- <h3>Name: </h3><br><input type="text" class="dharavi" name="" id="venki" placeholder="enter ur name" required><br><br> -->
+        <button class="beti" onclick="myFunction(),inputMsg()" id="venki">click here</button></div><br><br>
+    <div id="main" >
+        <h1 id="dance"></h1>
+        <p id="para">You are invited to the Freshers Party. Every bit of joy, happiness, laughter and sweets will be there in celebration. Please come and enjoy the party!!! <br>Date :- 21st October 2022 <br>Time : 10am <br> Venue :- Classroom 702 </p>
+    </div>
+    <script>
+        function myFunction() {
+           document.getElementById("main").style.display='inline-block';
+        //    document.getElementById("dance").style.display='block'
+        //    document.getElementById("venki").style.display='none';
+            }
+            let freshers= document.querySelector('h1');
+freshers.addEventListener('click', inputMsg);
+
+function inputMsg() {
+    let name = prompt('Enter your name: ');
+    freshers.textContent = 'Hi!  '  + name +" ";
+}
+    
+       </script>
+</body>
+</html>
